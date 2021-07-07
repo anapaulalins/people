@@ -28,15 +28,14 @@
 - TypeScript
 - React Native Vector Icons
 - React Navigation
+- Expo
 
 ##  Running App
 - Clone Repository 
 ```
-$ git clone https://github.com/anapaulalins/vaga-mobile-teste.git
+$ git clone https://github.com/anapaulalins/people.git
 
-$ cd vaga-mobile-teste
-
-$ cd poke
+$ cd people
 ```
 
 - Install the dependencies 
@@ -50,11 +49,5 @@ $ npm install
 
 - Run the application
 ```
-$ yarn start
- 
-# or
-
-$ npx react-native start
-
-$ npx react-native run-android
+$ expo start
 ```
