@@ -44,7 +44,11 @@ interface PropsUser{
         large: string,
         medium: string,
         thumbnail: string,
-    }
+    },
+    dob: {
+        age: number
+    },
+    gender: string,
   
 }
 

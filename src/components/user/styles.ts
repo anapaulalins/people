@@ -13,7 +13,7 @@ export const Container = styled.SafeAreaView`
 export const Content = styled.View`
     border-radius: 50px;
     position: absolute;
-    top: ${height - 250}px;
+    top: ${height - 300}px;
     height: ${height}px;
     width: ${width}px;
     background-color: ${colors.greenPrimary};
@@ -32,9 +32,27 @@ export const UserName = styled.Text`
     color: ${colors.light};
 `
 
+export const Text = styled.Text`
+    font-size: 14px;
+    font-weight: 700;
+    color: ${colors.primary};
+`
+export const TextParams = styled.Text`
+    font-size: 14px;
+    font-weight: 700;
+    color: ${colors.secondary};
+    text-transform: capitalize;
+    margin-top: 5px;
+    background-color: ${colors.primary};
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 5px;
+`
+
+
 export const ButtonConnect = styled.TouchableOpacity`
     background-color: ${colors.primary};
-    align-self: flex-end;
+    align-self: flex-start;
     flex-direction: row;
     align-items: center;
     border-radius: 30px;
@@ -44,7 +62,7 @@ export const ButtonConnect = styled.TouchableOpacity`
 
 export const ContentProfile = styled.View`
     background-color: ${colors.primary};
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 0 25px;
     padding-top: 30px;
     padding-bottom: 15px;

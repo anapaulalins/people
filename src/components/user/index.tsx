@@ -13,7 +13,9 @@ import {
     UserImage,
     TextUser,
     TextUserLabel,
-    ButtonBack
+    ButtonBack,
+    Text,
+    TextParams
 } from './styles'
 import { colors } from '../../themes/colors';
 
@@ -38,7 +40,11 @@ type ParamsItem = {
             large: string,
             medium: string,
             thumbnail: string,
-        }
+        },
+        dob: {
+            age: number
+        },
+        gender: string,
     }
   }
   
@@ -63,10 +69,20 @@ const User: React.FC = () => {
             >
             </MapView>
             <Content>
-               <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 40}}>
-                    <View style={{flexDirection: 'column'}}>
+               <View style={{flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 40}}>
+                    <View style={{flexDirection: 'column', flex: 1}}>
                         <TextName numberOfLines={1}>{params.name.first} {params.name.last}</TextName>
                         <UserName>@{params.login.username}</UserName>
+                        <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 8}}>
+                            <View>
+                                <Text>Age</Text>
+                                <TextParams>{params.dob.age}</TextParams>
+                            </View>
+                            <View style={{marginLeft: 20}}>
+                                <Text>Gender</Text>
+                                <TextParams>{params.gender}</TextParams>
+                            </View>
+                        </View>
                     </View>
                     <ButtonConnect>
                         <Icon name="person-add-outline" color={colors.secondary} size={25} style={{marginRight: 5}}/>
