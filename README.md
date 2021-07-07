@@ -3,7 +3,7 @@
 
 ## **Features**
 - [x] Search 
-- [x] List
+- [x] List users
 - [x] Scroll infinito
 - [x] Pull to refresh
 - [x] Filter by country
